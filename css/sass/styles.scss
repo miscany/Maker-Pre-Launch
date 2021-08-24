@@ -11,6 +11,10 @@ body{
 
 ul{
   list-style-type:none;
+  li{
+    display: inline-block;
+    cursor:pointer;
+  }
 }
 
 
@@ -40,9 +44,7 @@ p{
   ul{
     float:right;
     li{
-      display: inline-block;
       margin-left:40px;
-      cursor:pointer;
     }
   }
 
@@ -60,7 +62,7 @@ p{
 .flex-center-container{
   display:flex; 
   align-items:center;
-  justify-content: flex-end;
+  
 }
 
 .flex{
@@ -124,6 +126,7 @@ p{
     margin-bottom:3rem;
   }
   
+  
 }
 
 .see-all{
@@ -132,6 +135,7 @@ p{
   letter-spacing: 2px;
   padding:5px 20px;
   margin:0 auto;
+  
 }
 
 .grid-container{
@@ -192,8 +196,15 @@ footer{
   .navbar-right-mobile{
     display:none;
   }
+  .mobile{
+    display:none;
+  }
 
   // Show desktop
+
+  .desktop{
+    display:block !important;
+  }
 
   .navbar-right-desktop{
     display:inline-block;
@@ -211,7 +222,58 @@ footer{
 
   .middle-content{
     img{
-      width:50%;
+      width:60%;
     }
   }
+  .article{
+    width:50%;
+    position:absolute;
+    right:0;
+    bottom:0;
+    background-color: white;
+    padding:50px 50px 0;
+    
+    text-align:left;
+  }
+
+  .see-all{
+    float:right;
+  }
+
+  .grid-container{
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows:auto auto;
+    column-gap:30px;
+  }
+  
+  footer{
+    padding: 20px 10%;
+    text-align: left;
+    h1{
+      padding:20px 0;
+    }
+    ul, p{
+      display:inline-block;
+    }
+    li{}
+    
+  }
+
+  .flex-center-container{
+    .flex:nth-child(2){
+      p, ul{
+        float: right;
+      }
+      
+     
+    }
+  }
+
+  .social-icons{
+    li{
+      margin-left:10px;
+    }
+  }
+
+ 
 }
