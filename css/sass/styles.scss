@@ -50,11 +50,31 @@ p{
 
 }
 
+.menu{
+  @extend .navbar;
+  background-color:black;
+  z-index:1;
+  height:100%;
+  li{
+    display:block;
+    font-size:2rem;
+    margin-bottom:1rem;
+  }
+}
+
+.menu-list{
+  position:absolute;
+  top:50%;
+  left:0;
+  transform: translate(0,-50%);
+}
+
+.menu-right{
+  @extend .navbar-right-mobile;
+}
+
 
 // Reusable 
-
-
-
 
 .content-margin{
   margin:0 5%;
@@ -96,14 +116,19 @@ p{
   margin:0 auto;
 }
 
+.wrapper{
+  width:100%;
+}
+
 // End of resusable
 
 .navbar-right-mobile{
+  cursor:pointer;
   img{
-    
   float:right;
   }
 }
+
 
 .immersive-popup{
   color:white;
@@ -135,6 +160,8 @@ p{
   letter-spacing: 2px;
   padding:5px 20px;
   margin:0 auto;
+  
+  
   
 }
 
@@ -206,11 +233,27 @@ footer{
     display:block !important;
   }
 
+  .top-header{
+    background: url('../images/desktop/image-hero.jpg');
+    background-size:100% 100%;
+  }
+
   .navbar-right-desktop{
     display:inline-block;
   
   }
 
+  .desktop-flex-container{
+    display:flex; 
+  align-items:center;
+  }
+
+  .desktop-flex{
+    flex:1;
+    flex-basis:50%;
+    display:
+    inline-block;
+  }
   .navbar{
     padding:40px 10%;
   }
@@ -275,5 +318,14 @@ footer{
     }
   }
 
+  .footer-nav{
+    li{
+      margin-right:20px;
+    }
+  }
+
+  .bottom-content{
+    margin-bottom:7rem;
+  }
  
 }

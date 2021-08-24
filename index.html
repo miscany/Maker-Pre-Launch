@@ -6,10 +6,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel = 'stylesheet' href = './css/styles.css'/>
   <script src="https://kit.fontawesome.com/f870c7346d.js" crossorigin="anonymous"></script>
+  <script src = 'script.js'></script>
   <title>Maker Pre Launch Landing Page</title>
 </head>
 <body>
   <div class="main">
+
+    <div class="menu" style='display:none'>
+      <div class="flex-center-container">
+        <div class="flex">
+      <h1>loopstudios</h1>
+    </div>
+    <div class = "menu-right">
+      <img src = './images/icon-close.svg'/>
+    </div>
+    </div>
+    <div class="menu-list">
+      <ul>
+        <li>ABOUT</li>
+        <li>CAREERS</li>
+        <li>EVENTS</li>
+        <li>PRODUCTS</li>
+        <li>SUPPORT</li>
+      </ul>
+    </div>
+    </div>
+   
     <header class = 'top-header '>
       <picture>
         <source media = '(min-width:1052px)' srcset = './images/desktop/image-hero.jpg'/>
@@ -17,8 +39,8 @@
       </picture>
       <div class="navbar padding ">
         <div class = 'flex-center-container'>
-        <div class="navbar-left flex">
-        <h1 class = ''>loopstudios</h1>
+        <div class=" flex">
+        <h1>loopstudios</h1>
         </div>
         <div class="navbar-right-mobile flex">
           <img src = './images/icon-hamburger.svg'/>
@@ -52,11 +74,11 @@
       
     </div>
     <div class="bottom-content">
-      <div class="flex-center-container">
-      <header class = 'flex'>
+      <div class="desktop-flex-container">
+      <header class = 'desktop-flex'>
         <h1>OUR CREATIONS</h1>
       </header>
-      <div class="flex">
+      <div class="desktop-flex">
       <div class=" see-all desktop ">
         SEE ALL
       </div>
@@ -145,59 +167,63 @@
         </div>
         
       </div>
-      <div class="see-all mobile auto-margin">SEE ALL</div>
+      <div class="wrapper">
+      <div class="see-all mobile ">SEE ALL</div>
     </div>
-    <footer>
-      <div class="mobile">
-      <h1>loopstudios</h1>
-      <a href = '#'><p>About</p></a>
     </div>
-    <div class="desktop">
-      <div class="flex-center-container">
-        <h1 class = 'flex'>loopstudios</h1>
-        <div class="flex social-icons">
-        <ul>
-          <li>
-            <a href = '#'>
-            <i class="fab fa-facebook-square"></i>
+    
+  </div>
+  <!-- End of content margin-->
+  <footer>
+    <div class="mobile">
+    <h1>loopstudios</h1>
+    <a href = '#'><p>About</p></a>
+  </div>
+  <div class="desktop">
+    <div class="flex-center-container">
+      <h1 class = 'flex'>loopstudios</h1>
+      <div class="flex social-icons">
+      <ul>
+        <li>
+          <a href = '#'>
+          <i class="fab fa-facebook-square"></i>
+        </a>
+      </li>
+        <li>
+          <a href = '#'>
+            <i class="fab fa-twitter"></i>
           </a>
         </li>
-          <li>
-            <a href = '#'>
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href = '#'>
-              <i class="fab fa-pinterest"></i>
-            </a>
-          </li>
-          <li>
-            <a href = '#'>
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-      </div>
-     
-    
-    <div class="flex-center-container">
-      <ul class = 'flex'>
-        <li>About</li>
-        <li>Careers</li>
-        <li>Events</li>
-        <li>Products</li>
-        <li>Support</li>
+        <li>
+          <a href = '#'>
+            <i class="fab fa-pinterest"></i>
+          </a>
+        </li>
+        <li>
+          <a href = '#'>
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        
       </ul>
-      <div class="flex">
-        <p>&copy; 2021 Loopstudios. All rights reserved.</p>
-      </div>
+    </div>
+    </div>
+   
+  
+  <div class="flex-center-container">
+    <ul class = 'flex footer-nav'>
+      <li>About</li>
+      <li>Careers</li>
+      <li>Events</li>
+      <li>Products</li>
+      <li>Support</li>
+    </ul>
+    <div class="flex">
+      <p>&copy; 2021 Loopstudios. All rights reserved.</p>
     </div>
   </div>
-    </footer>
-  </div>
+</div>
+  </footer>
   </div>
 </body>
 </html>
