@@ -228,12 +228,49 @@ footer a {
   display: none;
 }
 
+.footer-nav {
+  display: inline-block;
+}
+
+.footer-nav li {
+  margin: 1rem 0;
+  display: block;
+}
+
+.social-icons {
+  position: relative;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons li {
+  margin-left: 10px;
+}
+
+.social-icons li:hover .underline {
+  display: block;
+}
+
+.social-icons .underline {
+  width: 14px;
+  left: 0;
+  margin-top: 2px;
+}
+
+.footer-nav {
+  position: relative;
+}
+
+.footer-nav li:hover .underline {
+  display: block;
+}
+
 @media screen and (min-width: 1052px) {
   .navbar-right-mobile, .menu-right {
     display: none;
   }
   .mobile {
-    display: none;
+    display: none !important;
   }
   .desktop {
     display: block !important;
@@ -307,31 +344,16 @@ footer a {
   footer ul, footer p {
     display: inline-block;
   }
-  .flex-center-container .flex:nth-child(2) p, .flex-center-container .flex:nth-child(2) ul {
+  .footer-nav li {
+    margin: 0 20px 0 0;
+    display: inline-block;
+  }
+  .desktop-flex-container .desktop-flex:nth-child(2) p, .desktop-flex-container .desktop-flex:nth-child(2) ul, .desktop-flex-container .desktop-flex:nth-child(3) p, .desktop-flex-container .desktop-flex:nth-child(3) ul {
     float: right;
   }
   .social-icons {
-    position: relative;
-  }
-  .social-icons li {
-    margin-left: 10px;
-  }
-  .social-icons li:hover .underline {
-    display: block;
-  }
-  .social-icons .underline {
-    width: 14px;
-    left: 0;
-    margin-top: 2px;
-  }
-  .footer-nav {
-    position: relative;
-  }
-  .footer-nav li {
-    margin-right: 20px;
-  }
-  .footer-nav li:hover .underline {
-    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .bottom-content {
     margin-bottom: 7rem;
