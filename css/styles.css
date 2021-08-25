@@ -15,6 +15,7 @@ ul {
 
 ul li {
   display: inline-block;
+  position: relative;
   cursor: pointer;
 }
 
@@ -124,6 +125,16 @@ p {
   width: 100%;
 }
 
+.underline {
+  display: none;
+  position: absolute;
+  margin-top: 5px;
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  left: 25%;
+}
+
 .navbar-right-mobile, .menu-right {
   cursor: pointer;
 }
@@ -159,6 +170,12 @@ p {
   letter-spacing: 2px;
   padding: 5px 20px;
   margin: 0 auto;
+  cursor: pointer;
+}
+
+.see-all:hover {
+  background-color: black;
+  color: white;
 }
 
 .grid-container {
@@ -226,7 +243,11 @@ footer a {
     background-size: 100% 100%;
   }
   .navbar-right-desktop {
+    position: relative;
     display: inline-block;
+  }
+  .navbar-right-desktop li:hover .underline {
+    display: block;
   }
   .desktop-flex-container {
     display: -webkit-box;
@@ -289,11 +310,28 @@ footer a {
   .flex-center-container .flex:nth-child(2) p, .flex-center-container .flex:nth-child(2) ul {
     float: right;
   }
+  .social-icons {
+    position: relative;
+  }
   .social-icons li {
     margin-left: 10px;
   }
+  .social-icons li:hover .underline {
+    display: block;
+  }
+  .social-icons .underline {
+    width: 14px;
+    left: 0;
+    margin-top: 2px;
+  }
+  .footer-nav {
+    position: relative;
+  }
   .footer-nav li {
     margin-right: 20px;
+  }
+  .footer-nav li:hover .underline {
+    display: block;
   }
   .bottom-content {
     margin-bottom: 7rem;

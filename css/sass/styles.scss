@@ -13,6 +13,7 @@ ul{
   list-style-type:none;
   li{
     display: inline-block;
+    position:relative;
     cursor:pointer;
   }
 }
@@ -120,6 +121,17 @@ p{
   width:100%;
 }
 
+.underline{
+  display:none;
+  position: absolute;
+  margin-top:5px;
+  width:25px;
+  height:2px;
+  background-color: white;
+  left:25%;
+  
+  
+}
 // End of resusable
 
 .navbar-right-mobile{
@@ -160,10 +172,14 @@ p{
   letter-spacing: 2px;
   padding:5px 20px;
   margin:0 auto;
-  
-  
-  
+  cursor:pointer;
+
+  &:hover{
+    background-color: black;
+    color:white;
+  }
 }
+
 
 .grid-container{
   display: grid;
@@ -239,7 +255,15 @@ footer{
   }
 
   .navbar-right-desktop{
+    position:relative;
     display:inline-block;
+    li{
+      
+      &:hover .underline{
+        display:block;
+      }
+    }
+    
   
   }
 
@@ -313,14 +337,28 @@ footer{
   }
 
   .social-icons{
+    position: relative;
     li{
       margin-left:10px;
+      &:hover .underline{
+        display:block;
+      }
+    }
+    .underline{
+      width:14px;
+      left:0;
+      margin-top:2px;
     }
   }
 
   .footer-nav{
+    position: relative;
     li{
       margin-right:20px;
+
+      &:hover .underline{
+        display:block;
+      }
     }
   }
 
