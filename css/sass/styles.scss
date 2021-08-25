@@ -45,7 +45,7 @@ p{
   ul{
     float:right;
     li{
-      margin-left:40px;
+      margin-left:30px;
     }
   }
 
@@ -132,6 +132,11 @@ p{
   
   
 }
+
+.margin-vertical-3{
+  margin-top:3rem;
+  margin-bottom:3rem;
+}
 // End of resusable
 
 .navbar-right-mobile{
@@ -167,7 +172,8 @@ p{
 }
 
 .see-all{
-  display:inline-block;
+  display:block;
+  width:120px;
   border:1px solid black;
   letter-spacing: 2px;
   padding:5px 20px;
@@ -268,7 +274,11 @@ footer{
     }
   }
 }
-
+@media screen and (max-width:1052px){
+  .see-all{
+    margin-bottom:5rem;
+  }
+}
 @media screen and (min-width:1052px){
 
   // Hide mobile
@@ -305,7 +315,7 @@ footer{
   
   .desktop-flex-container{
     display:flex; 
-  align-items:center;
+    align-items:center;
   }
 
   .desktop-flex{
@@ -342,6 +352,13 @@ footer{
   .see-all{
     float:right;
   }
+
+  .bottom-content{
+    header{
+      text-align:left;
+      margin-bottom:0;
+    }
+    }
 
   .grid-container{
     grid-template-columns: repeat(4, 1fr);
