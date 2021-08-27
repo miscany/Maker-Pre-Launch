@@ -35,7 +35,7 @@ p {
 .top-header {
   width: 100%;
   position: relative;
-  background: url("../images/mobile/image-hero.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/mobile/image-hero.jpg");
   background-size: 100% 100%;
 }
 
@@ -289,7 +289,7 @@ footer a {
     display: block !important;
   }
   .top-header {
-    background: url("../images/desktop/image-hero.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../images/desktop/image-hero.jpg");
     background-size: 100% 100%;
   }
   .navbar-right-desktop {
